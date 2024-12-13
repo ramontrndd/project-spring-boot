@@ -1,6 +1,5 @@
 package com.projectwebservice.webservice.entities;
 
-
 import jakarta.persistence.*;
 
 import java.io.Serial;
@@ -14,7 +13,7 @@ public class User implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private Long id;
     private String name;
     private String email;
     private String password;
@@ -24,7 +23,7 @@ public class User implements Serializable {
         super();
     }
 
-    public User(long id, String name, String email, String password, String phone) {
+    public User(Long id, String name, String email, String password, String phone) {
         this.id = id;
         this.name = name;
         this.email = email;
@@ -32,11 +31,11 @@ public class User implements Serializable {
         this.phone = phone;
     }
 
-    public long getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -77,11 +76,11 @@ public class User implements Serializable {
         if (o == null || getClass() != o.getClass()) return false;
 
         User user = (User) o;
-        return id == user.id;
+        return id != null && id.equals(user.id);
     }
 
     @Override
     public int hashCode() {
-        return Long.hashCode(id);
+        return id != null ? id.hashCode() : 0;
     }
 }
