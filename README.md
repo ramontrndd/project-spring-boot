@@ -88,14 +88,6 @@ webservice/
 - `GET /categories` - Lista todas as categorias.
 - `GET /categories/{id}` - Consulta uma categoria por ID.
 
-## 🧪 Testes
-
-Para executar os testes:
-
-```bash
-mvn test
-```
-
 ## 🤝 Contribuição
 
 1. Faça um fork do projeto
@@ -107,10 +99,7 @@ mvn test
 ## 👤 Autor
 
 **Ramon Trindade**
-
 - LinkedIn: [linkedin.com/in/ramontrndd](https://linkedin.com/in/ramontrndd)
 - GitHub: [github.com/ramontrndd](https://github.com/ramontrndd)
-
 ## 📄 Licença
-
 Este projeto está sob licença MIT. Consulte o arquivo `LICENSE` para mais detalhes.
